@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FDND Visitekaartje</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <article>
   <header>
-    <h1>Maika Nguyen
+    <h1>Maika Nguyen</h1>
     </h1>
-    <p><em>Creative Frontend Developer in spé</em></p>
+    
     <button>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -30,18 +33,46 @@
         <path d="M5 9h2a2 2 0 0 0 2 -2v-2" />
       </svg>
     </button>
+    <img src="assets/creative-coder.png" alt="Creative Coder">
 
+    <p class="beschrijving"><em>STUDENT AD FRONTEND DESIGN & DEVELOPMENT</em></p>
   </header>
   
-  <img src="assets/creative-coder.png" alt="Creative Coder">
 
-  <dl>
-    <dt>HTML</dt><dd>🏆🏆🏆</dd>
-    <dt>CSS</dt><dd>🏆🏆</dd>
-    <dt>JavaScript</dt><dd>🏆🏆🏆🏆</dd>
-  </dl>
+
+
+  <div class="tabs">
+    <div class="tab">
+      <input type="radio" id="tab-1" name="tab-group-1" checked>
+      <label for="tab-1">About me</label>
+      <div class="content">
+        <p>Stuff for Tab One</p>
+        <d1>
+          <dt>Test1</dt><dd>emoji</dd>
+        </d1>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" id="tab-2" name="tab-group-1">
+      <label for="tab-2">Tab twee</label>
+      <div class="content">
+        <p>Stuff for Tab Two</p>
+        <img src="//placekitten.com/200/100">
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" id="tab-3" name="tab-group-1">
+      <label for="tab-3">Tab drie</label>
+      <div class="content">
+        <p>Stuff for Tab Three</p>
+        <img src="//placekitten.com/200/100">
+      </div>
+    </div>
+  </div>
+
   
-  <p>Het WEB is te gek! <br> Met HTML, CSS en JavaScript kan ik vette, interactieve web apps maken.</p>
+
+
 </article>
 
   <script src="./scripts/script.js"></script>

@@ -12,7 +12,17 @@ body {
   display:flex;
   justify-content:center;
   align-items:center;
-  color:#10214e;
+  color:#292929;
+}
+
+p{
+  font-weight: bold;
+}
+
+p.beschrijving{
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 article {
@@ -23,15 +33,18 @@ article {
   flex-direction:column;
   align-items:center;
   justify-content:flex-end;
-  background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
-  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+  background: rgb(188, 163, 207);
+  background: linear-gradient(0deg, rgb(193, 163, 212) 40%, #dfd3f0 100%);
+  box-shadow:0 0 17px 3px rgba(51, 51, 51, 0.4);
+  /*border: 0.1em solid #292929;*/
   border-radius:1rem;
   position: relative;
   transition:.25s;
 }
 
 header {
+  
+  padding-top: 1em;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -41,8 +54,11 @@ header {
 }
 
 h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  text-transform: uppercase;
   margin:2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  color: rgb(61, 61, 61);
 }
 
 button {
@@ -53,21 +69,22 @@ button {
   width:2.5rem;
   height:2.5rem;
   transform: scale(.8);
-  background: rgba(0,239,255,1);
+  background: rgb(255, 255, 255);
   border-radius:50%;
   padding:.25rem;
   transition:.25s;
 }
 button:focus {
   outline:none;
-  background:#202592;
+  background:#a38ab4;
 }
+
 button:focus svg {
-  stroke: rgba(0,239,255,1);
+  stroke: rgb(0, 0, 0);
 }
 
 svg {
-  stroke: #4e54c8;
+  stroke: #575757;
   position: absolute;
   top:calc(1.25rem - 12px);
   left:calc(1.25rem - 12px);
@@ -78,14 +95,89 @@ button svg:nth-of-type(2) {
   transition-delay: 0ms;
 }
 
+/* test */
+
+.tabs {
+  position: relative;
+  min-height: 17em; /* This part sucks */
+  min-width: 25em;
+  clear: both;
+  margin: 2em;
+  margin-top: 3em;
+  margin-bottom: -0.1em;
+
+}
+.tab {
+  float: left;
+
+}
+.tab label {
+  background: #eee;
+  padding: 0.6em;
+  margin: -10px;
+  border: 1px solid rgb(170, 170, 170);
+  margin-left: -0.2px;
+  position: relative;
+  left: -1.5em;
+  border-radius: 0.3em;
+}
+
+.tab [type="radio"] {
+  opacity: 0;
+}
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-bottom-left-radius: 0.7em;
+  border-bottom-right-radius: 0.7em;
+}
+.content > * {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+[type="radio"]:focus ~ label {
+  outline: 0.1em solid rgb(138, 138, 138);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+[type="radio"]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type="radio"]:checked ~ label ~ .content {
+  z-index: 1;
+}
+[type="radio"]:checked ~ label ~ .content > * {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+/* test */
+
+
+
 img {
-  width:10em;
+  width:12em;
   border-radius:10em;
   border:5px solid #fff;
   box-shadow:0 0 2px 2px rgba(0,0,0,.2);
   position:relative;
-  top:2rem;
   transition:.25s .15s;
+  margin: 1.5em;
 }
 
 dl {
