@@ -1,5 +1,5 @@
 # Beschrijving
-Live-url: https://maikangn.github.io/your-tribe-profile-card/ <BR>
+Live-url: https://maikangn.github.io/your-tribe-profile-card/ <BR><BR>
 ![visitekaartje](https://user-images.githubusercontent.com/112856292/190244382-f28622c0-9638-4209-9a54-84cc1836d39e.png)
 Dit is het visitekaartje over mijzelf gemaakt met HTML en CSS. <BR> 
 Het doel van dit project is om jezelf voor te stellen aan de squad (klas) en potentiële werkgevers.
