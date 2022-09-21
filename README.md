@@ -5,9 +5,9 @@ Dit is het visitekaartje over mijzelf gemaakt met HTML en CSS. <BR>
   Het doel van dit project is om jezelf voor te stellen aan de squad (klas) en potentiële werkgevers.
 
 # Inhoudsopgave
-- Beschrijving
-- Kenmerken
-- Bronvermelding
+- [Beschrijving](https://github.com/maikangn/your-tribe-profile-card#beschrijving)
+- [Kenmerken](https://github.com/maikangn/your-tribe-profile-card#kenmerken)
+- [Bronvermelding](https://github.com/maikangn/your-tribe-profile-card#bronvermelding)
 
 # Kenmerken
 De volgende tools zijn gebruikt voor dit project:
